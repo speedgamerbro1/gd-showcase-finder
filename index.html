@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GD Level Showcase Finder</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="main-wrapper">
+    <div class="container">
+      <div class="card main">
+        <h1>GD Showcase Finder</h1>
+        <div class="subtitle">Find YouTube showcases for Geometry Dash levels</div>
+          <div id="status" class="status">Loading data...</div>
+
+
+        <div class="input-row">
+          <input id="levelId" type="text" placeholder="Enter Level ID" />
+          <button id="findBtn">Search</button>
+        </div>
+
+        <div class="button-row">
+          <button id="randomBtn">Random</button>
+          <button id="favBtn">⭐ Favorite</button>
+        </div>
+
+        <div id="suggestions"></div>
+        <div id="result"></div>
+        <div id="video"></div>
+      </div>
+
+      <div class="card sidebar">
+        <h2>Favorites</h2>
+        <div id="favoritesList" class="favorites"></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      Made by
+      <a class="author" href="https://git.gay/speedgamerbro1" target="_blank" rel="noopener noreferrer">
+        speedgamerbro1
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
